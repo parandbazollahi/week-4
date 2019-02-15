@@ -5,12 +5,13 @@ import junit.framework.TestCase;
 
 public class junitTest  {
 	public junitTest() {
-	CakeIterator iteratorCakeMenu =  new CakeMenu();
-	CakeIterator iteratorCoffeeMenu= new CoffeeMenu();
-	CakeIterator iteratorIceCreamMenu= new IceCreamMenu();
+		
+		Menu  cakeMenu = null;
+		Menu  coffeeMenu = null;
+		Menu  iceCreamMenu = null;
 	
-	Cashier cashier = new Cashier(iteratorCakeMenu,iteratorCoffeeMenu,iteratorIceCreamMenu);
-	boolean cash = cashier.ShowTheOrder();
+	Cashier cashier = new Cashier( cakeMenu ,  coffeeMenu , iceCreamMenu);
+	boolean cash = cashier.printMenu();
 	Assert.assertTrue(cash);
 	
 	IceCreamMenu iceCream = new IceCreamMenu();
@@ -30,7 +31,6 @@ public class junitTest  {
 	double price;
 	double calories;
 	CakeStoreMenu cakeStore = new CakeStoreMenu("chocolate", "choclote with chess", 25.49, 2000);
-	
 	
 	}
 	

@@ -1,5 +1,6 @@
 import java.util.Iterator;
 
 public interface CakeIterator {
-	public Iterator createIterator();
+	boolean hasNext();
+	Object next();
 }

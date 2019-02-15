@@ -1,12 +1,17 @@
 
-public class test {
+	import java.util.*;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stubsysrem
-		CakeMenu cakeMenu = new CakeMenu ();
-		CoffeeMenu coffeeMenu = new CoffeeMenu();
-		IceCreamMenu iceCreamMenu = new IceCreamMenu();
-		Cashier cashier = new Cashier(cakeMenu , coffeeMenu , iceCreamMenu );
-		cashier .showTheBill();
-	}
+	public class test {
+		public static void main(String args[]) {
+			CakeMenu cakeMenu = new CakeMenu();
+	        CoffeeMenu coffeeMenu = new CoffeeMenu();
+	        IceCreamMenu icecreamMenu = new IceCreamMenu();
+	        
+	 
+			Cashier cashier = new Cashier(cakeMenu, coffeeMenu,icecreamMenu);
+			// With iterators
+			cashier.printMenu();
+			
+		}
+		
 }
